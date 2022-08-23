@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+header {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(101, 123, 123);
+}
+
+.top-header {
+    height: 50px;
+    width: 90%;
+    /* background-color: red; */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    height: 100%;
+    width: 20%;
+    /* background-color: red; */
+}
+
+.logo h1 {
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+
+.menu {
+    width: 70%;
+    /* height: 100%; */
+    /* background-color: blueviolet; */
+    text-align: right;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+
+/* responsive part sstart  */
+
+@media screen and (max-width:400px) {
+    .menu {
+        width: 30%;
+        /* background-color: red; */
+        /* display: none; */
+        position: absolute;
+        text-align: center;
+        top: 80px;
+        flex-direction: column;
+        left: 130px;
+    }
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(241, 132, 132);
+        justify-content: space-around;
+        margin: 10px;
+        color: white;
+    }
+    .logo {
+        width: 70%;
+        /* background-color: blue; */
+        margin: auto;
+    }
+    .menu a:hover {
+        background-color: azure;
+        color: black;
+    }
+}
+
+@media screen and (max-width:290px) {
+    .menu {
+        width: 100%;
+        /* background-color: red; */
+        /* display: none; */
+        position: absolute;
+        text-align: center;
+        top: 80px;
+        flex-direction: column;
+        left: 0px;
+    }
+    .logo {
+        width: 70%;
+        /* background-color: red; */
+    }
+    .logo h1 {
+        font-size: 25px;
+    }
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        justify-content: space-around;
+        margin: 10px;
+        color: white;
+    }
+    .menu a:hover {
+        background-color: azure;
+        color: black;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu {
+        width: 50%;
+        /* background-color: red; */
+        /* display: none; */
+        position: absolute;
+        text-align: center;
+        top: 80px;
+        flex-direction: column;
+        left: 120px;
+    }
+    .logo {
+        width: 70%;
+        /* background-color: red; */
+    }
+    .logo h1 {
+        font-size: 25px;
+    }
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(118, 134, 116);
+        justify-content: space-around;
+        color: white;
+        margin: 10px;
+    }
+    .menu a:hover {
+        background-color: azure;
+        color: black;
+    }
+}
